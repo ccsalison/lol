@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* unvisited link */
+a:link {
+    color: darkturquoise;
+}
+
+/* visited link mustard yellow rgba(255, 219, 88, 1)*/
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: lightslategrey;
+}
+
+/* selected link */
+a:active {
+    color: darkturquoise;
+}
+
+
+
+/* ====== typography  ======*/
+
+h1 {
+    color: grey;
+    position: center;
+    font-family: "Lobster 1.4", sans-serif;
+    font-size: 5em;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+
+nav u1{
+    margin: 0;
+    padding: 0;
+    list-style: right none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 5px;
+    padding: 1em;
+
+}
+nav a{
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+@media screen and (max-width: 599px) {
+
+    h1 {
+        text-align: center;
+        font-size: 3em;
+    }
+    body {
+        font-size: 0.7rem;
+    }
+    nav {
+        list-style-position: center;
+    }
+}
+
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid white;
+    opacity: 0.6;
+    padding: 5em;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.about_border{
+    background-color: paleturquoise;
+    padding: 2em;
+}
+
+.description {
+    background-image:
+        url("../img/Background_white_overlay.jpg");
+    padding: 7em ;
+    font-weight: 400;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.about{
+    text-align: left;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-top: 3rem;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.pink{
+    color: pink;
+}
+
+.normal{
+    font-size: 0.7rem;
+    bottom: 5rem
+}
+
+.go{
+    background-image:
+        url("../img/Jinx.jpg");
+    padding: 3em;
+}
+
+
+
+/* ====== buttons  ======*/
+.button{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em; /*TB LR*/
+}
+
+.button-small{
+    font-size: .6rem;
+}
+.button-accent {
+    color: black;
+    border-color: black;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    background: white;
+    color: black;
+    border-color: white;
+}
+
+.unstyled-list {
+    text-align: right;
+}
+
+.contact{
+    width: 500px;
+    height: auto;
+    text-align: center;
+}
+
+
+
+figure{
+    margin: 0;
+    position:relative;
+}
+
+.port-item img{
+    display: block;
+}
+
+.port-desc{
+    font-size: 1.5em;
+    font-weight: 500;
+    position: absolute;
+    z-index: 100;
+    bottom : 2em;
+    left: 3em;
+    right: 3em;
+    color: black;
+    background: rgba( 129, 216, 208, .75);
+    padding-top: 0;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+@media screen and (min-width: 710px) {
+    .port-item{
+        width: 50%;
+        float: left;
+        overflow: hidden;
+        display: block;
+    }
+
+    .port-desc{
+        bottom : 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+        transform: translateY(150%);
+    }
+
+    .port-item:hover .port-desc{
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .port-item{
+        width: 33.333333333334%;
+
+    }
+}
+
+/* ====== mobile  ======*/
+
+@media screen and (max-width: 599px) {
+
+    .unstyled-list {
+        text-align:  center;
+    }
+
+    .description {
+        font-size: 0.7rem;
+    }
+
+    .button {
+        font-size: 0.7rem;
+        border-width: 1.2px;
+    }
+
+    .go{
+        padding: 1em ;
+    }
+
+    .about{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+
+}

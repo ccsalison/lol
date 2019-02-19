@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>About</title>
+</head>
+<body>
+
+<header>
+    <h1 align = "center">Log of League</h1>
+    <nav>
+        <ul class="unstyled-list">
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="about.html">About</a> </li>
+            <li><a href="contact.html">Contact</a> </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="go">
+<script src="jscode.js"> </script>
+<form id="theForm" action="form.html" method="post" onsubmit="validateTextbox();">
+    <div class="transbox">
+        Summoner's name: <br>
+        <input type="text" name="summoner"><br><br>
+        Phone number: <br>
+        <input type="number" name="phone"><br><br>
+        Phone carrier: <br>
+        <select name="phone carrier" form="phoneform">
+            <option value="tmobile">T-mobile</option>
+            <option value="others">Others</option>
+        </select><br><br>
+        Max number of hours playing League/day: <br>
+        <input type="number" name="hour"><br><br>
+        <br><br>
+        <input type="submit" value="Submit">
+
+    </div>
+</form>
+</section>
+
+</body>
+
+<footer>
+
+    <img src="img/heart.png" alt="<3" style="width:12px ;height:auto;"><a href="https://github.com/ccsalison" style="text-decoration: none;"> GitHub</a><br>
+    <img src="img/heart.png" alt="<3" style="width:12px ;height:auto;"><a href="https://www.linkedin.com/in/ccsalison/" style="text-decoration: none;"> LinkedIn</a>
+</footer>
+
+</html>
